@@ -1,0 +1,28 @@
+GET http://localhost:2005/fetch
+###
+POST http://localhost:2005/new
+content-type: application/json
+
+{
+    "Name_of_the_Faculty":"Sasi", 
+    "Designation":"sghjk", 
+    "Nature_of_the_Program":"asdfg", 
+    "Title_of_the_Program":"asdfgh", 
+    "Duration_From":"2004-09-23", 
+    "Duration_To":"2004-09-27", 
+    "Participation":"hgfd", 
+    "Name_of_the_Organization_and_Place":"oiuytre", 
+    "Location_of_Organization":"zxcvbn", 
+    "Amount_Provided_by_the_HEI":"zxcvb", 
+    "Certificates_pdf":"asdfgh"
+}
+
+PUT http://localhost:2005/change/2
+Content-Type: application/json
+
+{
+    "Name_of_the_Organization_and_Place":"sesta",
+    "Location_of_Organization":"Salem"
+}
+
+DELETE http://localhost:2005/delkey/2
